@@ -77,16 +77,16 @@ img {
 <h3>GTFS format requirements</h3>
 <p>A typical GTFS file <strong>requires</strong> the following files:</p>
 <ul>
-<li><strong>agency.txt</strong>: One or more transit agencies that provide the data in this feed.</li>
+<li><strong><a href="https://docs.google.com/spreadsheets/d/1ZBD0C8f4_WapsVw6hhmXrRpezXZZKcflTvzAVcaBIqs/edit?usp=sharing">agency.txt</a></strong>: One or more transit agencies that provide the data in this feed.</li>
 <li><strong>stops.txt</strong>: Individual locations where vehicles pick up or drop off passengers.</li>
 <li><strong>routes.txt</strong>: Transit routes. A route is a group of trips that are displayed to riders as a single service.</li>
 <li><strong>trips.txt</strong>: Trips for each route. A trip is a sequence of two or more stops that occurs at specific time.</li>
 <li><strong>stop_times.txt</strong>: Times that a vehicle arrives at and departs from individual stops for each trip.</li>
-<li><strong>calendar.txt</strong>: Dates for service IDs using a weekly schedule. Specify when service starts and ends, as well as days of the week where service is available.</li>
+<li><strong><a href="https://docs.google.com/spreadsheets/d/1QFmRAJ47FJlzMjGEgvwXzyp-dHd5gkleVSkVUiItMxE/edit?usp=sharing">calendar.txt</a></strong>: Dates for service IDs using a weekly schedule. Specify when service starts and ends, as well as days of the week where service is available.</li>
 </ul>
 <p>And the following <strong>optional</strong> files:</p>
 <ul>
-<li><strong>calendar_dates.txt</strong>: Exceptions for the service IDs defined in the calendar.txt file. If calendar_dates.txt includes ALL dates of service, this file may be specified instead of calendar.txt.</li>
+<li><strong><a href="https://docs.google.com/spreadsheets/d/1lK8ZCdv1zDg5uEkL9LtB_jPYNAb3HgXUGO7yXjP7rPk/edit?usp=sharing">calendar_dates.txt</a></strong>: Exceptions for the service IDs defined in the calendar.txt file. If calendar_dates.txt includes ALL dates of service, this file may be specified instead of calendar.txt.</li>
 <li><strong>fare_attributes.txt</strong>: Fare information for a transit organization’s routes.</li>
 <li><strong>fare_rules.txt</strong>: Rules for applying fare information for a transit organization’s routes.</li>
 <li><strong>shapes.txt</strong>: Rules for drawing lines on a map to represent a transit organization’s routes.</li>
@@ -111,7 +111,17 @@ img {
 <h3>Methods and Tools</h3>
 <p>An example GTFS Feed is downloaded <a href="https://developers.google.com/transit/gtfs/examples/gtfs-feed">here</a> and analyzed. The tools and procedures of the operation is as follows:</p>
 <ul>
-<li><strong><a href="https://www.google.com/sheets/about/">Google Sheets</a></strong> is used to <strong>import</strong> and <strong>edit</strong> the example Comma Delimited Files <a href="https://support.bigcommerce.com/articles/Public/What-is-a-CSV-file-and-how-do-I-save-my-spreadsheet-as-one">*.CSV</a>. Information from the raw *.pdf files are manually extracted and put into Google Sheets. References from <a href="https://developers.google.com/transit/gtfs/reference#agency_fields">here</a> are also added to the associated files. The end products are saved and ziped to form a GTFS file.</li>
+<li><strong><a href="https://www.google.com/sheets/about/">Google Sheets</a></strong> is used to <strong>import</strong> and <strong>edit</strong> the example Comma Delimited Files <a href="https://support.bigcommerce.com/articles/Public/What-is-a-CSV-file-and-how-do-I-save-my-spreadsheet-as-one">*.CSV</a>. Information from the raw *.pdf files are manually extracted and put into Google Sheets. References from <a href="https://developers.google.com/transit/gtfs/reference#agency_fields">here</a> are also added to the associated files. The end products are saved and ziped to form a GTFS file.
+<ul>
+<li><strong>calendar_dates.txt</strong>: Refer here <a href="http://www.excel-easy.com/examples/holidays.html">Instructions</a> and <a href="https://docs.google.com/spreadsheets/d/1K2u3JcBs2jS3bn4EKmCPvay3vVKPIZJVdnQOxRGxUbM/edit?usp=sharing">Result</a> to obtain holiday exceptions.</li>
+<li>Item 2b</li>
+</ul></li>
+</ul>
+</div>
+<div id="notes" class="section level3">
+<h3>Notes</h3>
+<ul>
+<li>In Calendar.txt, the field “end_date” is mocked, since no such information can be abtained.</li>
 </ul>
 </div>
 <div id="references-and-links" class="section level3">
