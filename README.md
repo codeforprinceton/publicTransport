@@ -21,7 +21,7 @@ The goal of this project is to create a web app for public transportation in Gre
         + Need to add later
         +  
         
-* **[Convert GTFS (Level 1)](http://codeforprinceton.github.io/publicTransport/Convert_GTFS.html)**: Create GTFS file using transportation data.
+* **[Convert GTFS (Level 1)](http://codeforprinceton.github.io/publicTransport/notes/Convert_GTFS.html)**: Create GTFS file using transportation data.
 * **Map of Route (Level 1)**: Create map using the GTFS file showing the routes, bus stops and arrival times.
   
 * **User Data Collection (Level 2)**: Create user interface and database to collect user data, i.e., points on map where people like best to get on bus, time of needed services, destinations, etc.
