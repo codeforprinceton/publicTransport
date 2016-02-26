@@ -21,7 +21,7 @@ The goal of this project is to create a web app for public transportation in Gre
         + Need to add later
         +  
         
-* **Convert GTFS (Level 1)**: Create GTFS file using transportation data.
+* **[Convert GTFS (Level 1)](http://codeforprinceton.github.io/publicTransport/Convert_GTFS.html)**: Create GTFS file using transportation data.
 * **Map of Route (Level 1)**: Create map using the GTFS file showing the routes, bus stops and arrival times.
   
 * **User Data Collection (Level 2)**: Create user interface and database to collect user data, i.e., points on map where people like best to get on bus, time of needed services, destinations, etc.
@@ -40,7 +40,7 @@ The goal of this project is to create a web app for public transportation in Gre
 * **[Public Transportation Guide](https://github.com/codeforprinceton/publicTransport/blob/gh-pages/Code%20for%20Princeton%20-%20public%20transport%20team%20guide.pdf)**:	Basic info/tutorial of our team, tips on how to use Github, Slack and Meetup, etc.
 * **[Slack](https://codeforprinceton.slack.com/messages/public_transport/files/)**:	Our main communication channel, please search for Code for Princeton -> public_transport channel, welcome to join us! 
 * **[Meetup](http://www.meetup.com/codeforprinceton/events/228704890/)**:	This is how we schedule our meetings. 
-* **[Bootstrap](http://getbootstrap.com/)**: We will use Bootstrap to create our front end/user interface.
+* **[Bootstrap](http://getbootstrap.com/)**: We will use Bootstrap to create our front end/user interface. Here is a [Template Site](http://codeforprinceton.github.io/publicTransport/)
 * **[Atom](https://atom.io/)**: A very nice and free text editor tool.
 * **[Data supplier](http://www.gmtma.org/index.php)**:	This is where we get our data.
 
