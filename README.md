@@ -5,7 +5,7 @@
 *****************
 #### Summary
 
-The goal of this project is to create a web app for public transportation in Greater Mercer County / princeton area.
+The goal of this project is to create a web app for public transportation in Greater Mercer County / Princeton area.
 
 
 *****************
@@ -18,7 +18,7 @@ The goal of this project is to create a web app for public transportation in Gre
         - [Free B Nighborhood Bus Services](http://www.gmtma.org/pdfs/bustrain/mercer/sep2015/free_neighborhood_bus%20sep%202015_web.pdf)
         - [Zline](http://www.gmtma.org/pdfs/commuters/2015dec/z_line_12-26-15.pdf)
     - **Train**:
-        - (Need to add later)
+        - Need to add later
         -  
         
 * **Map of Route (Level 1)**: Create a map showing the routes, bus stops and arrival times.  
