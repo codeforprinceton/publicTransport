@@ -17,10 +17,9 @@ The goal of this project is to create a web app for public transportation in Gre
         - [Free B Commuter](http://www.gmtma.org/pdfs/bustrain/mercer/sep2015/free_b_commuter_sep_2015_web.pdf)
         - [Free B Nighborhood Bus Services](http://www.gmtma.org/pdfs/bustrain/mercer/sep2015/free_neighborhood_bus%20sep%202015_web.pdf)
         - [Zline](http://www.gmtma.org/pdfs/commuters/2015dec/z_line_12-26-15.pdf)
-    - **Train**:
-        - Need to add later
-        -  
-        
+    - **Train**:  
+        + Need to add later
+        +
 * **Map of Route (Level 1)**: Create a map showing the routes, bus stops and arrival times.  
 * **User Data Collection (Level 2)**: Create user interface and database to collect user data, i.e., points on map where people like best to get on bus, time of needed services, destinations, etc.  
 * **Data-driven Transport Policy (Level 2)**: Use collected data to make informed decisions as where and when the buses are needed the most.  
