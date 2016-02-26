@@ -1,15 +1,16 @@
----
-title: "Public Transport Project"
----
+
+### Public Transport Project
+
 *****************
-### Summary
+*****************
+#### Summary
 
 The goal of this project is to create a web app for public transportation in Greater Mercer County / princeton area.
 
 
 *****************
 
-### Features of Targeted Web App
+#### Features of Targeted Web App
 
 - **Basics**: Create a website to provide information of public transportation in princeton, which should include bus and train systems:
     - **Bus**:
@@ -29,7 +30,7 @@ The goal of this project is to create a web app for public transportation in Gre
    
 *****************************
 
-### Key Links and Repoes:
+#### Key Links and Repoes:
 
 * **[Github Repo](https://github.com/codeforprinceton/publicTransport)**:	All of our files and creations are stored here.
 * **[Public Transportation Guide](https://github.com/codeforprinceton/publicTransport/blob/gh-pages/Code%20for%20Princeton%20-%20public%20transport%20team%20guide.pdf)**:	Basic info/tutorial of our team, tips on how to use Github, Slack and Meetup, etc.
@@ -41,7 +42,7 @@ The goal of this project is to create a web app for public transportation in Gre
 
 *****************
 
-### The Team:
+#### The Team:
 
 * **Jiahuan Kang (Jack)** , Data Analyst/developer, potential lead
 * **Jeff**, Application Architect/developer
@@ -51,4 +52,5 @@ The goal of this project is to create a web app for public transportation in Gre
 * **Matthew R.**, (Planner/Community Organizer/GIS)
 
 *****************
-### Crafted out of love for Code for Princeton
+*****************
+##### **Crafted out of love for Code for Princeton**
