@@ -19,7 +19,7 @@ The goal of this project is to create a web app to generate GTFS feeds for publi
         - [Zline](http://www.gmtma.org/pdfs/commuters/2015dec/z_line_12-26-15.pdf)
     - **Train**:
     
-* **[Conver bus schedule to GTFS format (Level 1)](http://codeforprinceton.github.io/publicTransport/Convert_GTFS.html)**: Converted bus schedule into GTFS format.       
+* **[Conver bus schedule to GTFS format (Level 1)](http://codeforprinceton.github.io/publicTransport/Convert_GTFS.html)**: Converted bus schedule into GTFS format.
 * **[Map of Route (Level 1)](https://www.google.com/maps/d/edit?mid=zRoCq87FojlE.kPDrgU-nF5ZA&usp=sharing)**: Created a map showing the routes and bus stops.  
 * **[Web App (Level 2)](http://codeforprinceton.github.io/publicTransport/index1.html)**: Created a web app to streamline the process of GTFS conversion.
 * **Real-time Tracking (Level 3)**: Install or integrate tracker information (if available) to track bus movement in real time.  
