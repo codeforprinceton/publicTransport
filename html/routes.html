@@ -1,0 +1,47 @@
+<script type="text/javascript">
+    //route_id  route_short_name    route_long_name route_type
+
+    function writeRoutes(){
+        var Routes = [['route_id','route_short_name','route_long_name','route_type']];
+
+        console.log(Routes)
+            Routes.push([
+                    $('#rte_id').val(),
+                    $('#rte_shortname').val(),
+                    $('#rte.longname').val(),
+                    $('#rte_type').val()
+                  
+                ]);
+
+      console.log(Routes);      
+
+      createlink(Routes,"routes.txt");
+    }
+
+</script>
+
+<form>
+        <div class="form-group" class="col-md-8" id="routes">
+            <h2>Routes Information</h2>
+            <label>Route ID:</label>
+            <p><input type="text" class="form-control" id="rte_id" ></p>
+   
+               <label>Short Name:</label>
+            <p><input type="text" class="form-control" id="rte_shortname" ></p>
+                        <label>Long Name:</label>
+            <p><input type="text" class="form-control" id="rte_longname" ></p>
+             <!--            <label>Description:</label>
+            <p><input type="text" class="form-control" id="rte_description" ><e/p>-->
+                        <label>Route type:</label>
+            <p><input type="text" class="form-control" id="rte_type" ></p>
+             <!--           <label>Route URL:</label>
+            <p><input type="text" class="form-control" id="rte_url" ></p>
+                        <label>Route Color:</label>
+            <p><input type="text" class="form-control" id="rte_color" ></p>        
+                        <label>Route Text Color:</label>
+            <p><input type="text" class="form-control" id="rte_txt_color" ></p>-->
+
+         </div>
+
+        
+</form>

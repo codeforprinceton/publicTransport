@@ -1,0 +1,41 @@
+<script type="text/javascript">
+    
+    function writeAgency(){
+        var Agency = [['agency_id','agency_name','agency_url','agency_timezone','agency_lang','agency_phone']];
+
+        console.log(Agency)
+            Agency.push([
+                    $('#agency_id').val(),
+                    $('#agency_name').val(),
+                    $('#agency_url').val(),
+                    $('#agency_tz').val(),
+                    $('#agency_lang').val(),
+                    $('#agency_phone').val(),
+                ]);
+
+      console.log(Agency);      
+
+      createlink(Agency,"agency.txt");
+    }
+
+</script>
+
+
+<form>
+        <div class="form-group" class="col-md-8" id="agency">
+            <h2>Agency Information</h2>
+            <label >Agency ID:</label>
+            <p><input type="text" class="form-control" id="agency_id" ></p>
+            <label >Name:</label>
+            <p><input type="text" class="form-control" id="agency_name" ></p>
+            <label >Agency URL:</label>
+            <p>    <input type="text" class="form-control" id="agency_url" ></p>
+            <label >Agency Phone number:</label>
+           <p> <input type="text" class="form-control" id="agency_phone" ></p>
+                       <label >Agency language:</label>
+           <p> <input type="text" class="form-control" id="agency_lang" ></p>
+                       <label >Agency Timezone:</label>
+           <p> <input type="text" class="form-control" id="agency_tz" ></p>
+         </div>
+
+</form>
