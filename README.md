@@ -5,7 +5,7 @@
 *****************
 #### Summary
 
-The goal of this project is to create a web app to generate GTFS feeds for public transportation agencys in Greater Mercer County / princeton area.
+The goal of this project is to create a web app to generate GTFS feeds for public transportation agencys in Greater Mercer County / princeton area. Refer to our presentation [here](https://prezi.com/01cjtu1q42s6/public-transportation/?utm_campaign=share&utm_medium=copy).
 
 
 *****************
@@ -24,7 +24,8 @@ The goal of this project is to create a web app to generate GTFS feeds for publi
 * **[Web App (Level 2)](http://codeforprinceton.github.io/publicTransport/index1.html)**: Created a web app to streamline the process of GTFS conversion.
 * **Real-time Tracking (Level 3)**: Install or integrate tracker information (if available) to track bus movement in real time.  
 * **IOS App? (Level 4)**: not sure yet.
-   
+
+
    
 *****************************
 
