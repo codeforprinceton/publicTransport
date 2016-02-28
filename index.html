@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GTFS Builder</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class='container'>
+		
+		<div class="span12">
+			<section id="wizard">
+			  <div class="page-header">
+	            <h1>GTFS Builder</h1>
+	          </div>
+	
+				<div id="rootwizard">
+					<div class="navbar">
+					  <div class="navbar-inner">
+					    <div class="container">
+					<ul>
+					  	<li><a href="#tab-agency" data-toggle="tab">Agency</a></li>
+						<li><a href="#tab-routes" data-toggle="tab">Routes</a></li>
+						<li><a href="#tab-trips" data-toggle="tab">Trips</a></li>
+						<li><a href="#tab-freq" data-toggle="tab">Frequencies</a></li>
+						<li><a href="#tab-stops" data-toggle="tab">Stops</a></li>
+						<li><a href="#tab-stoptimes" data-toggle="tab">Stop Times</a></li>
+						<li><a href="#tab-shapes" data-toggle="tab">Shapes</a></li>
+					</ul>
+					 </div>
+					  </div>
+					</div>
+					<div id="bar" class="progress progress-striped active">
+					  <div class="bar"></div>
+					</div>
+					<div class="tab-content">
+					    <div class="tab-pane" id="tab-agency">
+					      1
+					    </div>
+					    <div class="tab-pane" id="tab-routes">
+					      	<p>
+						      	<input type='text' name='name' id='name' placeholder='Enter Your Name'>
+						      </p>
+					    </div>
+						<div class="tab-pane" id="tab-trips">
+							3
+					    </div>
+						<div class="tab-pane" id="tab-freq">
+							4
+					    </div>
+						<div class="tab-pane" id="tab-stops">
+							5
+					    </div>
+						<div class="tab-pane" id="tab-stoptimes">
+							6
+					    </div>
+						<div class="tab-pane" id="tab-shapes">
+							7
+					    </div>
+						<ul class="pager wizard">
+							<li class="previous first" style="display:none;"><a href="#">First</a></li>
+							<li class="previous"><a href="#">Previous</a></li>
+							<li class="next last" style="display:none;"><a href="#">Last</a></li>
+						  	<li class="next"><a href="#">Next</a></li>
+						</ul>
+					</div>	
+				</div>
+				
+
+				
+			</section>
+ 		</div>
+	</div>
+
+
+	<div id='downloads'>
+	<p>	<h3>Downloads</h3></p>
+	</div>
+
+    <script src="js/jquery-latest.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	<script src="js/jquery.bootstrap.wizard.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	
+	<script>
+	$(document).ready(function() {
+	  	$('#rootwizard')
+	  	.bootstrapWizard({onNext: function(tab, navigation, index) {
+
+	  			if(index==1) {
+	  				console.log('index = '+index);
+
+	  				writeAgency();
+	  			}
+
+				if(index==2) {
+					// Make sure we entered the name
+					/*if(!$('#name').val()) {
+						alert('You must enter your name');
+						$('#name').focus();
+						return false;
+					}*/
+					console.log('index = '+index);
+
+	  				writeRoutes();
+				}
+				
+				// Set the name for the next tab
+				//$('#tab3').html('Hello, ' + $('#name').val());
+				
+			}, onTabShow: function(tab, navigation, index) {
+				var $total = navigation.find('li').length;
+				var $current = index+1;
+				var $percent = ($current/$total) * 100;
+				$('#rootwizard').find('.bar').css({width:$percent+'%'});
+			}});	
+
+	  	 $("#tab-agency").load("html/agency.html");
+	  	 $("#tab-routes").load("html/routes.html");
+	  	 $("#tab-trips").load("html/trips.html");
+	  	 $("#tab-stops").load("html/stops.html");
+	  	 $("#tab-stoptimes").load("html/stoptimes.html");
+	  	 $("#tab-shapes").load("html/shapes.html");
+	
+	});	
+
+
+	</script>
+  </body>
+</html>
