@@ -1,132 +1,417 @@
-
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>GTFS Builder - Jack Branch</title>
-    <!-- Bootstrap -->
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>PuTran</title>
+
+    <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
-  </head>
-  <body>
-    <div class='container'>
+    <!-- Custom CSS -->
+    <link href="css/stylish-portfolio.css" rel="stylesheet">
 
-		<div class="span12">
-			<section id="wizard">
-			  <div class="page-header">
-	            <h1>GTFS Builder</h1>
-	          </div>
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
 
-				<div id="rootwizard">
-					<div class="navbar">
-					  <div class="navbar-inner">
-					    <div class="container">
-					<ul>
-					  	<li><a href="#tab-agency" data-toggle="tab">Agency</a></li>
-						<li><a href="#tab-routes" data-toggle="tab">Routes</a></li>
-						<li><a href="#tab-trips" data-toggle="tab">Trips</a></li>
-						<li><a href="#tab-freq" data-toggle="tab">Frequencies</a></li>
-						<li><a href="#tab-stops" data-toggle="tab">Stops</a></li>
-						<li><a href="#tab-stoptimes" data-toggle="tab">Stop Times</a></li>
-						<li><a href="#tab-shapes" data-toggle="tab">Shapes</a></li>
-					</ul>
-					 </div>
-					  </div>
-					</div>
-					<div id="bar" class="progress progress-striped active">
-					  <div class="bar"></div>
-					</div>
-					<div class="tab-content">
-					    <div class="tab-pane" id="tab-agency">
-					      1
-					    </div>
-					    <div class="tab-pane" id="tab-routes">
-					      	<p>
-						      	<input type='text' name='name' id='name' placeholder='Enter Your Name'>
-						      </p>
-					    </div>
-						<div class="tab-pane" id="tab-trips">
-							3
-					    </div>
-						<div class="tab-pane" id="tab-freq">
-							4
-					    </div>
-						<div class="tab-pane" id="tab-stops">
-							5
-					    </div>
-						<div class="tab-pane" id="tab-stoptimes">
-							6
-					    </div>
-						<div class="tab-pane" id="tab-shapes">
-							7
-					    </div>
-						<ul class="pager wizard">
-							<li class="previous first" style="display:none;"><a href="#">First</a></li>
-							<li class="previous"><a href="#">Previous</a></li>
-							<li class="next last" style="display:none;"><a href="#">Last</a></li>
-						  	<li class="next"><a href="#">Next</a></li>
-						</ul>
-					</div>
-				</div>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top"  onclick = $("#menu-close").click(); >Public Transport</a>
+            </li>
+            <li>
+                <a href="#top" onclick = $("#menu-close").click(); >Home</a>
+            </li>
+            <li>
+                <a href="#about" onclick = $("#menu-close").click(); >About</a>
+            </li>
+            <li>
+                <a href="#services" onclick = $("#menu-close").click(); >Services</a>
+            </li>
+            <li>
+                <a href="#contact" onclick = $("#menu-close").click(); >Map</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header -->
+    <header id="top" class="header">
+        <div class="text-vertical-center">
+            <h1>Public Tranport in Princeton</h1>
+            <h3>Maps, Routes, and Schedules for the public</h3>
+            <br>
+            <a href="#about" class="btn btn-dark btn-lg">Find Out More</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2>PuTran shows free, lowcost and green  ways to travel.</h2>
+                    <p class="lead">Public transportation systems at your service.</p>
+                    <!-- <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a>. -->
+                </div>
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
+
+    <!-- Services -->
+    <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+    <section id="services" class="services bg-primary">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2>Our Services</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-cloud fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>GTFS creation</strong>
+                                </h4>
+                                <p>Provide Tools to create GTFS feed for agencys to public their transit data.</p>
+                                <a href="#GTFSbuilder" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-compass fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Maps</strong>
+                                </h4>
+                                <p>Create maps to show public transportation routes and schedules.</p>
+                                <a href="#mapdemo" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                      <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-flask fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-sm-6">
+                            <div class="service-item">
+                                <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x"></i>
+                                <i class="fa fa-shield fa-stack-1x text-primary"></i>
+                            </span>
+                                <h4>
+                                    <strong>Service Name</strong>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                                <a href="#" class="btn btn-light">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.row (nested) -->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
+    </section>
 
 
 
-			</section>
- 		</div>
-	</div>
+    <!-- Callout -->
+  <section id="GTFSbuilder">
+    <aside class="callout">
+        <div class="text-vertical-center">
+            <h1>GTFS feed builder</h1>
+            <p>Fill out information <i class="fa fa-arrow-circle-right"></i> click next to generate files <i class="fa fa-arrow-circle-right"></i> download.</p>
+        </div>
+    </aside>
 
 
-	<div id='downloads'>
-	<p>	<h3>Downloads</h3></p>
-	</div>
+        <div class='container'>
+    		    <div class="span12">
+    			       <section id="wizard">
+                  <div id="rootwizard">
+                   	<div class="navbar">
+                   	  <div class="navbar-inner">
+                   	    <div class="container">
+                         <hr class="small">
+                   	<ul>
+                   	  	<li><a href="#tab_agency" data-toggle="tab">Agency</a></li>
+                   		<li><a href="#tab_routes" data-toggle="tab">Routes</a></li>
+                   		<li><a href="#tab_trips" data-toggle="tab">Trips</a></li>
+                   		<li><a href="#tab_freq" data-toggle="tab">Frequencies</a></li>
+                   		<li><a href="#tab_stops" data-toggle="tab">Stops</a></li>
+                   		<li><a href="#tab_times" data-toggle="tab">Stop Times</a></li>
+                   		<li><a href="#tab_shapes" data-toggle="tab">Shapes</a></li>
+                   	</ul>
+                    <div class="col-lg-3 col-lg-offset-9">
+                        <ul class="pager wizard">
+                          <li class="previous first"><a href="javascript:;">First</a></li>
+                          <li class="previous"><a href="javascript:;">Previous</a></li>
+                          <li class="next last"><a href="javascript:;">Last</a></li>
+                          <li class="next"><a href="javascript:;">Next</a></li>
+                          <li class="next finish" style="display:none;"><a href="javascript:;">Finish</a></li>
+                        </ul>
+                  </div>
+                   	 </div>
+                   	  </div>
+                   	</div>
+                   	<div class="tab-content">
+                   	    <div class="tab-pane" id="tab_agency">
+                   	      1
+                   	    </div>
+                   	    <div class="tab-pane" id="tab_routes">
+                   	      2
+                   	    </div>
+                   		<div class="tab-pane" id="tab_trips">
+                   			3
+                   	    </div>
+                   		<div class="tab-pane" id="tab_freq">
+                   			4
+                   	    </div>
+                   		<div class="tab-pane" id="tab_stops">
+                   			5
+                   	    </div>
+                   		<div class="tab-pane" id="tab_times">
+                   			6
+                   	    </div>
+                   		<div class="tab-pane" id="tab_shapes">
+                   			7
+                   	    </div>
 
+                   	</div>
+                   </div>
+
+
+    			</section>
+     		</div>
+          <div id='downloads'>
+        <i class="fa fa-download fa-2x"></i>  Download
+          </div>
+    	</div>
+</section>
+    <!-- Portfolio -->
+    <!-- <section id="portfolio" class="portfolio">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Our Work</h2>
+                    <hr class="small">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-1.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-2.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-3.jpg">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="portfolio-item">
+                                <a href="#">
+                                    <img class="img-portfolio img-responsive" src="img/portfolio-4.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>-->
+                    <!-- /.row (nested) -->
+                    <!-- <a href="#" class="btn btn-dark">View More Items</a> -->
+                <!-- </div> -->
+                <!-- /.col-lg-10 -->
+            <!-- </div> -->
+            <!-- /.row -->
+        <!-- </div> -->
+        <!-- /.container -->
+    <!-- </section> -->
+
+    <hr class="small">
+    <!-- Call to Action -->
+  <section id="mapdemo">
+   <aside class="call-to-action bg-primary">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h3>What you can do with GTFS feed.</h3>
+                    <!-- <a href="#" class="btn btn-lg btn-light">Click Me!</a>
+                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a> -->
+                </div>
+            </div>
+        </div>
+    </aside>
+</section>
+
+    <!-- Map -->
+<hr class="small">
+    <section id="contact" class="map">
+        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
+        <br />
+        <small>
+            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
+        </small>
+        </iframe>
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>Code for Princeton</strong>
+                    </h4>
+                    <ul class="list-unstyled">
+                        <li> <a href="http://www.meetup.com/codeforprinceton/">Meetup</a></li>
+                    </ul>
+                        <hr class="small">
+                    <ul class="list-inline">
+                        <li>
+                            <a href="https://www.facebook.com/codeforprinceton"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/codeprinceton"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/codeforprinceton/publicTransport"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
     <script src="js/jquery-latest.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.bootstrap.wizard.min.js"></script>
-	<script type="text/javascript" src="js/main.js"></script>
 
-	<script>
-	$(document).ready(function() {
-	  	$('#rootwizard')
-	  	.bootstrapWizard({onNext: function(tab, navigation, index) {
-
-	  			if(index==1) {
-	  				console.log('index = '+index);
-
-	  				writeAgency();
-	  			}
-
-				if(index==2) {
-					// Make sure we entered the name
-					/*if(!$('#name').val()) {
-						alert('You must enter your name');
-						$('#name').focus();
-						return false;
-					}*/
-					console.log('index = '+index);
-
-	  				writeRoutes();
-				}
-
-				// Set the name for the next tab
-				//$('#tab3').html('Hello, ' + $('#name').val());
-
-			}, onTabShow: function(tab, navigation, index) {
-				var $total = navigation.find('li').length;
-				var $current = index+1;
-				var $percent = ($current/$total) * 100;
-				$('#rootwizard').find('.bar').css({width:$percent+'%'});
-			}});
-
-	  	 $("#tab-agency").load("html/agency.html");
-	  	 $("#tab-routes").load("html/routes.html");
-	  	 $("#tab-trips").load("html/trips.html");
-	  	 $("#tab-stops").load("html/stops.html");
-	  	 $("#tab-stoptimes").load("html/stoptimes.html");
-	  	 $("#tab-shapes").load("html/shapes.html");
-
-	});
+    <script src="js/jquery.bootstrap.wizard.min.js"></script>
+  	<script type="text/javascript" src="js/main.js"></script>
 
 
-	</script>
-  </body>
+    <!-- Custom Theme JavaScript -->
+    <script>
+    // Closes the sidebar menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Opens the sidebar menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+
+    // Scrolls to the selected menu item on the page
+    $(function() {
+        $('a[href*=#]:not([href*=#tab])').click(function() {
+            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
+
+                var target = $(this.hash);
+                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+                if (target.length) {
+                    $('html,body').animate({
+                        scrollTop: target.offset().top
+                    }, 1000);
+                    return false;
+                }
+            }
+        });
+    });
+    </script>
+
+
+    	<script>
+      $(document).ready(function() {
+        	$('#rootwizard').bootstrapWizard({onNext: function(tab, navigation, index) {
+
+    	  			if(index==1) {
+    	  				console.log('index = '+index);
+
+    	  				writeAgency();
+    	  			}
+
+    				if(index==2) {
+    					// Make sure we entered the name
+    					/*if(!$('#name').val()) {
+    						alert('You must enter your name');
+    						$('#name').focus();
+    						return false;
+    					}*/
+    					console.log('index = '+index);
+
+    	  				writeRoutes();
+    				}
+
+    				// Set the name for the next tab
+    				//$('#tab3').html('Hello, ' + $('#name').val());
+
+    			}});
+      	$('#rootwizard .finish').click(function() {
+      		alert('Finished!, Starting over!');
+      		$('#rootwizard').find("a[href*='tab1']").trigger('click');
+      	});
+      });
+      $("#tab_agency").load("html/agency.html");
+      $("#tab_routes").load("html/routes.html");
+      $("#tab_trips").load("html/trips.html");
+      $("#tab_freq").load("html/freq.html");
+      $("#tab_stops").load("html/stops.html");
+      $("#tab_times").load("html/stoptimes.html");
+      $("#tab_shapes").load("html/shapes.html");
+    	</script>
+
+
+</body>
+
 </html>
