@@ -2,20 +2,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GTFS Builder</title>
+    <title>GTFS Builder - Jack Branch</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
   </head>
   <body>
     <div class='container'>
-		
+
 		<div class="span12">
 			<section id="wizard">
 			  <div class="page-header">
 	            <h1>GTFS Builder</h1>
 	          </div>
-	
+
 				<div id="rootwizard">
 					<div class="navbar">
 					  <div class="navbar-inner">
@@ -65,11 +65,11 @@
 							<li class="next last" style="display:none;"><a href="#">Last</a></li>
 						  	<li class="next"><a href="#">Next</a></li>
 						</ul>
-					</div>	
+					</div>
 				</div>
-				
 
-				
+
+
 			</section>
  		</div>
 	</div>
@@ -83,7 +83,7 @@
     <script src="js/bootstrap.min.js"></script>
 	<script src="js/jquery.bootstrap.wizard.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
-	
+
 	<script>
 	$(document).ready(function() {
 	  	$('#rootwizard')
@@ -106,16 +106,16 @@
 
 	  				writeRoutes();
 				}
-				
+
 				// Set the name for the next tab
 				//$('#tab3').html('Hello, ' + $('#name').val());
-				
+
 			}, onTabShow: function(tab, navigation, index) {
 				var $total = navigation.find('li').length;
 				var $current = index+1;
 				var $percent = ($current/$total) * 100;
 				$('#rootwizard').find('.bar').css({width:$percent+'%'});
-			}});	
+			}});
 
 	  	 $("#tab-agency").load("html/agency.html");
 	  	 $("#tab-routes").load("html/routes.html");
@@ -123,8 +123,8 @@
 	  	 $("#tab-stops").load("html/stops.html");
 	  	 $("#tab-stoptimes").load("html/stoptimes.html");
 	  	 $("#tab-shapes").load("html/shapes.html");
-	
-	});	
+
+	});
 
 
 	</script>
