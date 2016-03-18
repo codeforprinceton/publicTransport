@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Realtime Message Board</title>
+    <link rel="stylesheet" href="/css/bootstrap.css" media="screen" title="no title" charset="utf-8">
+<script src="https://cdn.firebase.com/js/client/2.4.1/firebase.js"></script>
+      </head>
+  <body>
+    <div class="container">
+      <h3 class="text-center">Realtime message board</h3>
+      <div class="jumbotron">
+        <h2 id="lblCurrentMessage" class="text-center"></h2>
+      </div>
+      <div class="form-group">
+        <input type="text" id="txtNewMessage" class="form-control">
+        <button id="btUpdateMessage" class="btn btn btn-primary">Update</button>
+      </div>
+    </div>
+
+<script>
+  var lblCurrentMessage = document.getElementById('lblCurrentMessage') ,
+      txtNewMessage = document.getElementById('txtNewMessage'),
+      btUpdateMessage = document.getElementsById('btUpdateMessage');
+      rootRef = new Firebase('https://web-quickstart.firebaseio-demo.com'),
+      currentMessageRef = rootRef.child('currentMessage');
+
+      btUpdateMessage.addEventListener('click',function(){
+        currentMessageRef.set(txtNewMessage.value);
+        txtNewMessage.value = ''
+      })
+</script>
+
+  </body>
+</html>
