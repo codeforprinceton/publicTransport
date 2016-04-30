@@ -1,55 +1,26 @@
+# [Start Bootstrap](http://startbootstrap.com/) - [Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/)
 
-### Public Transport Project
+[Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) is a responsive, one page portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). The theme features multiple content sections with an off canvas navigation menu.
 
+## Getting Started
 
-*****************
-#### Summary
+To use this template, choose one of the following options to get started:
+* Download the latest release on Start Bootstrap
+* Fork this repository on GitHub
 
-The goal of this project is to create a web app to generate GTFS feeds for public transportation agencys in Greater Mercer County / princeton area. Refer to our [Presentation](https://prezi.com/01cjtu1q42s6/public-transportation/?utm_campaign=share&utm_medium=copy) and [Description](https://docs.google.com/document/d/10DaBKzmy9HTqkpVdl1MChg3FlYzY5oFWSYpcAH_5oWw/edit).
+## Bugs and Issues
 
+Have a bug or an issue with this theme? [Open a new issue](https://github.com/IronSummitMedia/startbootstrap-stylish-portfolio/issues) here on GitHub or leave a comment on the [template overview page at Start Bootstrap](http://startbootstrap.com/template-overviews/stylish-portfolio/).
 
-*****************
+## Creator
 
-#### Goals of the project
+Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).
 
-- **Basics**: Create a website to provide information of public transportation in princeton, which should include bus and train systems:
-    - **Bus**:
-        - [Free B Commuter](http://www.gmtma.org/pdfs/bustrain/mercer/sep2015/free_b_commuter_sep_2015_web.pdf)
-        - [Free B Nighborhood Bus Services](http://www.gmtma.org/pdfs/bustrain/mercer/sep2015/free_neighborhood_bus%20sep%202015_web.pdf)
-        - [Zline](http://www.gmtma.org/pdfs/commuters/2015dec/z_line_12-26-15.pdf)
-    - **Train**:
-    
-* **[Conver bus schedule to GTFS format (Level 1)](http://codeforprinceton.github.io/publicTransport/Convert_GTFS.html)**: Converted bus schedule into GTFS format.
-* **[Map of Route (Level 1)](https://www.google.com/maps/d/edit?mid=zRoCq87FojlE.kPDrgU-nF5ZA&usp=sharing)**: Created a map showing the routes and bus stops.  
-* **[Web App (Level 2)](http://codeforprinceton.github.io/publicTransport/index1.html)**: Created a web app to streamline the process of GTFS conversion.
-* **Real-time Tracking (Level 3)**: Install or integrate tracker information (if available) to track bus movement in real time.  
-* **IOS App? (Level 4)**: not sure yet.
+* https://twitter.com/davidmillerskt
+* https://github.com/davidtmiller
 
+Start Bootstrap is based on the [Bootstrap](http://getbootstrap.com/) framework created by [Mark Otto](https://twitter.com/mdo) and [Jacob Thorton](https://twitter.com/fat).
 
-   
-*****************************
+## Copyright and License
 
-#### Key Links and Repoes:
-
-* **[Github Repo](https://github.com/codeforprinceton/publicTransport)**:	All of our files and creations are stored here.
-* **[Public Transportation Guide](https://github.com/codeforprinceton/publicTransport/blob/gh-pages/Code%20for%20Princeton%20-%20public%20transport%20team%20guide.pdf)**:	Basic info/tutorial of our team, tips on how to use Github, Slack and Meetup, etc.
-* **[Slack](https://codeforprinceton.slack.com/messages/public_transport/files/)**:	Our main communication channel, please search for Code for Princeton -> public_transport channel, welcome to join us! 
-* **[Meetup](http://www.meetup.com/codeforprinceton/events/228704890/)**:	This is how we schedule our meetings. 
-* **[Bootstrap](http://getbootstrap.com/)**: We will use Bootstrap to create our front end/user interface.
-* **[Atom](https://atom.io/)**: A very nice and free text editor tool.
-* **[Data supplier](http://www.gmtma.org/index.php)**:	This is where we get our data.
-
-*****************
-
-#### The Team:
-
-* **Jiahuan K. (Jack)** , Data Analyst/developer, potential lead  
-* **Erika S.**, Developer  
-* **Neelesh K**, Developer  
-* **Matthew R.**,(Planner/Community Organizer/GIS) (Planner/Community Organizer/GIS)  
-Maggie M. DataArchitect/team member   
-Paz B. Team member   
-Steve K. Jr.Developer    
-
-*****************
-#### Crafted out of love for Code for Princeton
+Copyright 2013-2015 Iron Summit Media Strategies, LLC. Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-stylish-portfolio/blob/gh-pages/LICENSE) license.
