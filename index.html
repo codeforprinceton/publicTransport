@@ -182,7 +182,9 @@
                    		<li><a href="#tab_freq" data-toggle="tab">Frequencies</a></li>
                    		<li><a href="#tab_stops" data-toggle="tab">Stops</a></li>
                    		<li><a href="#tab_times" data-toggle="tab">Stop Times</a></li>
+                      <li><a href="#tab_calendar" data-toggle="tab">Calendar</a></li>
                    		<li><a href="#tab_shapes" data-toggle="tab">Shapes</a></li>
+                      <li><a href="#tab_finished" data-toggle="tab" style="color:rgba(255, 255, 255, 1);background-color:rgba(255, 255, 255, 1)"> Success!</a></li>
                    	</ul>
                     <div class="col-lg-3 col-lg-offset-9">
                         <ul class="pager wizard">
@@ -190,7 +192,7 @@
                           <li class="previous"><a href="javascript:;">Previous</a></li>
                           <li class="next last"><a href="javascript:;">Last</a></li>
                           <li class="next"><a href="javascript:;">Next</a></li>
-                          <li class="next finish" style="display:none;"><a href="javascript:;">Finish</a></li>
+                          <li id="finish" class="next finish" style="display:none;"><a href="javascript:;">Finish</a></li>
                         </ul>
                   </div>
                    	 </div>
@@ -215,10 +217,24 @@
                    		<div class="tab-pane" id="tab_times">
                    			6
                    	    </div>
-                   		<div class="tab-pane" id="tab_shapes">
+                   		<div class="tab-pane" id="tab_calendar">
                    			7
                    	    </div>
+                      <div class="tab-pane" id="tab_shapes">
+                        8
+                      </div>
+                      <div class="tab-pane" id="tab_finished">
+                        <div class="container" style="text-align:center;">
+                          <h4 style="color:green">
+                            Success! <br>
+                          </4>
+                          <h5 style="margin-bottom:160px;">
+                             Enjoy! If you have any questions, please help us improve by <a href="mailto:jackniuniunancy@gmail.com?subject=feedback"><i class="fa fa-envelope-o" aria-hidden="true"></i>
+     email us</a>. Thanks for using our app!
 
+   </h5>
+                        </div>
+                      </div>
                    	</div>
                    </div>
 
@@ -396,6 +412,34 @@
 
     	  				writeRoutes();
     				}
+            if(index==3) {
+    					console.log('index = '+index);
+    	  				writeTrips();
+    				}
+
+            if(index==4) {
+    					console.log('index = '+index);
+    	  				writeFreq();
+    				}
+            if(index==5) {
+    					console.log('index = '+index);
+    	  				writeStops();
+    				}
+            if(index==6) {
+              console.log('index = '+index);
+                writeStoptimes();
+            }
+            if(index==7) {
+              console.log('index = '+index);
+                writeCalendar();
+            }
+            if(index==8) {
+              console.log('index = '+index);
+                writeShapes();
+            }
+            if(index > 9) {
+
+            }
 
     				// Set the name for the next tab
     				//$('#tab3').html('Hello, ' + $('#name').val());
@@ -412,6 +456,7 @@
       $("#tab_freq").load("html/freq.html");
       $("#tab_stops").load("html/stops.html");
       $("#tab_times").load("html/stoptimes.html");
+      $("#tab_times").load("html/calendar.html");
       $("#tab_shapes").load("html/shapes.html");
     	</script>
 

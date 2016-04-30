@@ -1,25 +1,40 @@
+<script type="text/javascript">
+
+    function writeStoptimes(){
+        var Stoptimes = [['trip_id','arrival_time','departure_time','stop_id','stop_sequence']];
+
+        console.log(Stoptimes)
+            Stoptimes.push([
+                    $('#trip_id').val(),
+                    $('#arrival_time').val(),
+                    $('#departure_time').val(),
+                    $('#stop_id').val(),
+                    $('#stop_sequence').val(),
+                ]);
+
+      console.log(Stoptimes);
+
+      createlink(Stoptimes,"stop_times.txt");
+    }
+
+</script>
+
 <form>
-        <div class="form-group" class="col-md-8" id="routes">
+        <div class="form-group" class="col-md-8" id="stoptimes">
             <h2>Stop Times Information</h2>
-            <label>Route ID:</label>
+            <label>Trip ID:</label>
             <p><input type="text" class="form-control" id="rte_id" ></p>
-   
-               <label>Short Name:</label>
+
+               <label>Arrival Time:</label>
             <p><input type="text" class="form-control" id="rte_shortname" ></p>
-                        <label>Long Name:</label>
+                        <label>Departure Time:</label>
             <p><input type="text" class="form-control" id="rte_longname" ></p>
-                        <label>Description:</label>
+                        <label>Stop ID:</label>
             <p><input type="text" class="form-control" id="rte_description" ></p>
-                        <label>Route type:</label>
+                        <label>Stop Sequence:</label>
             <p><input type="text" class="form-control" id="rte_type" ></p>
-                        <label>Route URL:</label>
-            <p><input type="text" class="form-control" id="rte_url" ></p>
-                        <label>Route Color:</label>
-            <p><input type="text" class="form-control" id="rte_color" ></p>        
-                        <label>Route Text Color:</label>
-            <p><input type="text" class="form-control" id="rte_txt_color" ></p>
 
          </div>
 
-        
+
 </form>
