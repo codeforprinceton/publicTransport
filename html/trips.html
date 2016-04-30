@@ -1,0 +1,32 @@
+<script type="text/javascript">
+
+    function writeTrips(){
+        var Trips = [['route_id','service_id','trip_id']];
+
+        console.log(Trips)
+            Agency.push([
+                    $('#route_id').val(),
+                    $('#service_id').val(),
+                    $('#trip_id').val(),
+                ]);
+
+      console.log(Trips);
+
+      createlink(Trips,"trips.txt");
+    }
+
+</script>
+
+
+<form>
+        <div class="form-group" class="col-md-8" id="trips">
+            <h2>Trips Information</h2>
+            <label >Route ID:</label>
+            <p><input type="text" class="form-control" id="route_id" ></p>
+            <label >Service ID:</label>
+            <p><input type="text" class="form-control" id="service_id" ></p>
+            <label >Trip ID:</label>
+            <p>    <input type="text" class="form-control" id="trip_id" ></p>
+        </div>
+
+</form>

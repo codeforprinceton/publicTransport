@@ -1,0 +1,56 @@
+<script type="text/javascript">
+
+    function writeCalendar(){
+        var Agency = [['service_id','monday','tuesday','wednesday','thursday','friday','saturday','sunday','start_date','end_date']];
+
+        console.log(Calendar)
+            Agency.push([
+                    $('#service_id').val(),
+                    $('#monday').val(),
+                    $('#tuesday').val(),
+                    $('#wednesday').val(),
+                    $('#thursday').val(),
+                    $('#friday').val(),
+                    $('#saturday').val(),
+                    $('#sunday').val(),
+                    $('#start_date').val(),
+                    $('#end_date').val(),
+                ]);
+
+      console.log(Calendar);
+
+      createlink(Calendar,"calendar.txt");
+    }
+
+</script>
+
+
+<form>
+        <div class="form-group" class="col-md-8" id="calendar">
+            <h2>Calendar Information</h2>
+            <p>
+
+            </p>
+            <label >Service ID:</label>
+            <p><input type="text" class="form-control" id="service_id" ></p>
+            <label >Monday (1 = service on; 0 = service off):</label>
+            <p><input type="text" class="form-control" id="monday" ></p>
+            <label >Tuesday:</label>
+            <p>    <input type="text" class="form-control" id="tuesday" ></p>
+            <label >Wednesday:</label>
+           <p> <input type="text" class="form-control" id="wednesday" ></p>
+                       <label >Thursday:</label>
+           <p> <input type="text" class="form-control" id="thursday" ></p>
+                       <label >Friday:</label>
+           <p> <input type="text" class="form-control" id="friday" ></p>
+           <label >Saturday:</label>
+           <p> <input type="text" class="form-control" id="saturday" ></p>
+           <label >Sunday:</label>
+           <p> <input type="text" class="form-control" id="sunday" ></p>
+           <label >Start date:</label>
+           <p> <input type="text" class="form-control" id="start_date" ></p>
+           <label >End date:</label>
+           <p> <input type="text" class="form-control" id="end_date" ></p>
+ </div>
+
+</form>

@@ -1,0 +1,39 @@
+<script type="text/javascript">
+
+    function writeFreq(){
+        var Agency = [['trip_id','start_time','end_time','headway_secs']];
+
+        console.log(freq)
+            Agency.push([
+                    $('#trip_id').val(),
+                    $('#start_time').val(),
+                    $('#end_time').val(),
+                    $('#headway_secs').val(),
+                  ]);
+
+      console.log(freq);
+
+      createlink(freq,"frequencies.txt");
+    }
+
+</script>
+
+
+<form>
+        <div class="form-group" class="col-md-8" id="freq">
+            <h2>Frequency Information</h2>
+            <p>
+              This table is intended to represent schedules that don't have a fixed list of stop times. When trips are defined in frequencies.txt, the trip planner ignores the absolute values of the arrival_time and departure_time fields for those trips in stop_times.txt. Instead, the stop_times table defines the sequence of stops and the time difference between each stop.
+            </p>
+            <label >Trip ID:</label>
+            <p><input type="text" class="form-control" id="trip_id" ></p>
+            <label >Start Time:</label>
+            <p><input type="text" class="form-control" id="start_time" ></p>
+            <label >End Time:</label>
+            <p>    <input type="text" class="form-control" id="end_time" ></p>
+            <label >Time between departures from the same stop:</label>
+           <p> <input type="text" class="form-control" id="headway_secs" ></p>
+
+         </div>
+
+</form>

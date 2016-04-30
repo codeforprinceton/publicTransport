@@ -1,15 +1,38 @@
+<script type="text/javascript">
+
+    function writeAgency(){
+        var Agency = [['stop_id','stop_name','stop_lat','stop_lon']];
+
+        console.log(Stops)
+            Agency.push([
+                    $('#stop_id').val(),
+                    $('#stop_name').val(),
+                    $('#stop_lat').val(),
+                    $('#stop_lon').val(),
+                    // $('#agency_lang').val(),
+                    // $('#agency_phone').val(),
+                ]);
+
+      console.log(Stops);
+
+      createlink(Stops,"stops.txt");
+    }
+
+</script>
+
+
 <form>
-        <div class="form-group" class="col-md-8" id="agency">
+        <div class="form-group" class="col-md-8" id="stops">
             <h2>Stop Information</h2>
             <label >Stop Id:</label>
             <p><input type="text" class="form-control" id="stp_id"></p>
-            <label>Code:</label>
-            <p>    <input type="text" class="form-control" id="stp_code" ></p>
-            <label>Name:</label>
+            <!-- <label>Stop Code:</label>
+            <p>    <input type="text" class="form-control" id="stp_code" ></p> -->
+            <label>Stop Name:</label>
            <p> <input type="text" class="form-control" id="stp_name" ></p>
 
-            <label>Description:</label>
-           <p> <input type="text" class="form-control" id="stp_description" ></p>
+            <!-- <label>Description:</label>
+           <p> <input type="text" class="form-control" id="stp_description" ></p> -->
 
             <label>Latitude:</label>
            <p> <input type="text" class="form-control" id="stp_latitude" ></p>
@@ -17,7 +40,7 @@
  <label>Longitude:</label>
            <p> <input type="text" class="form-control" id="stp_longitude" ></p>
 
- <label>Zone ID:</label>
+ <!-- <label>Zone ID:</label>
            <p> <input type="text" class="form-control" id="stp_zone" ></p>
 
  <label>URL:</label>
@@ -33,27 +56,8 @@
            <p> <input type="text" class="form-control" id="stp_timezone" ></p>
 
  <label>Wheelchair Boarding:</label>
-           <p> <input type="text" class="form-control" id="stp_whlchrboarding" ></p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+           <p> <input type="text" class="form-control" id="stp_whlchrboarding" ></p> -->
 
          </div>
-
-        
-
-
-        <p><a href="#" class="btn btn-default" id="next-routes">Next</a></p>
 
 </form>
