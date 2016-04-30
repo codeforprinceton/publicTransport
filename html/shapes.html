@@ -1,0 +1,35 @@
+<script type="text/javascript">
+
+    function writeShapes(){
+        var Shapes = [['shape_id','shape_pt_lat','shape_pt_lon','shape_pt_sequence']];
+
+        console.log(Shapes)
+            Shapes.push([
+                    $('#shape_id').val(),
+                    $('#shape_pt_lat').val(),
+                    $('#shape_pt_lon').val(),
+                    $('#shape_pt_sequence').val(),
+                ]);
+
+      console.log(Shapes);
+
+      createlink(Shapes,"shapes.txt");
+    }
+
+</script>
+
+
+<form>
+        <div class="form-group" class="col-md-8" id="shapes">
+            <h2>Agency Information</h2>
+            <label >Shapes ID:</label>
+            <p><input type="text" class="form-control" id="shape_id" ></p>
+            <label >Shape Point Latitude:</label>
+            <p><input type="text" class="form-control" id="shape_pt_lat" ></p>
+            <label >Shape Point Longitude:</label>
+            <p>    <input type="text" class="form-control" id="shape_pt_lon" ></p>
+            <label >Shape Point Sequence:</label>
+           <p> <input type="text" class="form-control" id="shape_pt_sequence" ></p>
+         </div>
+
+</form>
