@@ -1,5 +1,5 @@
 <script type="text/javascript">
-    
+
     function writeAgency(){
         var Agency = [['agency_id','agency_name','agency_url','agency_timezone','agency_lang','agency_phone']];
 
@@ -13,7 +13,7 @@
                     $('#agency_phone').val(),
                 ]);
 
-      console.log(Agency);      
+      console.log(Agency);
 
       createlink(Agency,"agency.txt");
     }
@@ -23,9 +23,9 @@
 
 <form>
         <div class="form-group" class="col-md-8" id="agency">
-            <h2>Agency Information</h2>
+            <h3>Agency Information</h3>
             <label >Agency ID:</label>
-            <p><input type="text" class="form-control" id="agency_id" ></p>
+            <p><input type="text" class="form-control" id="agency_id" placeholder="An ID that uniquly identifies a transit agency."></p>
             <label >Name:</label>
             <p><input type="text" class="form-control" id="agency_name" ></p>
             <label >Agency URL:</label>
